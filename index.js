@@ -19,7 +19,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-const serviceAccount = require(`${process.env.ADMIN_SDK}`);
+const serviceAccount = require("./configs/volunteer-network-73e0b-firebase-adminsdk-fl7pp-5067b9d519.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount)
